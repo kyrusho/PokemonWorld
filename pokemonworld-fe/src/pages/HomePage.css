@@ -1,0 +1,27 @@
+h1, p{
+    font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+    font-weight: bold;
+    font-size: 300%;
+}
+
+body {
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+}
+
+img{
+    margin: 1%;
+}
+
+.hover-effect:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+
+.map-container {
+    padding: 20px;
+    text-align: center;
+}
+

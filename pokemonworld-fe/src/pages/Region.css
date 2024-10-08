@@ -1,0 +1,32 @@
+body{
+    background: radial-gradient( lavenderBlush, rosyBrown);
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+    
+}
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+    font-weight: bold;
+}
+
+.region-card{
+    background: radial-gradient(antiqueWhite, mistyRose);
+}
+.region-card:hover {
+    transform: translate(0, -6px) scale(1.05);
+    background: radial-gradient(wheat, rosyBrown);
+  }
+
+.cardTxt{
+    font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+    font-size: large;
+}
+
+.card-title{
+    font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+    font-size: 150%;
+    font-weight: 700;
+}

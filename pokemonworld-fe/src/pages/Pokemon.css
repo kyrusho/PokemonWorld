@@ -1,0 +1,1349 @@
+body{
+    background: radial-gradient( lavenderBlush, rosyBrown);
+    background-repeat: no-repeat;
+    margin-bottom: 1em;
+
+}
+
+.pokemon-card:hover {
+    transform: translate(0, -6px) scale(1.05);
+  }
+  
+
+h1{
+    text-align: center;
+    margin: 20px;
+    font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+    font-weight: bold;
+}
+
+.cardTxt{
+    font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+    font-size: large;
+}
+
+.card-title{
+    font-family: 'New Century Schoolbook, TeX Gyre Schola, serif';
+    font-size: large;
+    font-weight: 700;
+}
+
+
+
+/* types */
+.Normal {
+    background: radial-gradient(white, #cccccc); /* Light gray */
+  }
+  
+  .Fire {
+    background: radial-gradient(#ff6666, #ffcc99); /* Light red and light orange */
+  }
+  
+  .Water {
+    background: radial-gradient(#66a3ff, #cce6ff); /* Light blue and light sky blue */
+  }
+  
+  .Electric {
+    background: radial-gradient(#ffff66, #ffcc99); /* Light yellow and light orange */
+  }
+  
+  .Grass {
+    background: radial-gradient(#66ff66, #99ff99); /* Light green */
+  }
+  
+  .Ice {
+    background: radial-gradient(#99ffff, #ccffff); /* Light cyan */
+  }
+  
+  .Fighting {
+    background: radial-gradient(#ff9966, #ffcc99); /* Light orange and light orange */
+  }
+  
+  .Poison {
+    background: radial-gradient(#cc66cc, #ff99ff); /* Light purple and light pink */
+  }
+  
+  .Ground {
+    background: radial-gradient(#E6BF82, #FFE0B2); /* Lighter brown to even lighter
+  
+  
+  
+  .Flying {
+    background: radial-gradient(#99ccff, #ccddff); /* Light blue and light sky blue */
+  }
+  
+  .Psychic {
+    background: radial-gradient(#ff99ff, #ffcc99); /* Light pink and light orange */
+  }
+  
+  .Bug {
+    background: radial-gradient(#ccff66, #ddff99); /* Light green and light lime green */
+  }
+  
+  .Rock {
+    background: radial-gradient(#cc9933, #ffcc66); /* Light brown and light orange */
+  }
+  
+  .Ghost {
+    background: radial-gradient(#663399, #9966cc); /* Light purple and light blue */
+  }
+  
+  .Steel {
+    background: radial-gradient(#999999, #cccccc); /* Light gray */
+  }
+  
+  .Dragon {
+    background: radial-gradient(#6666cc, #9999cc); /* Light blue and light lavender */
+  }
+  
+  .Dark {
+    background: radial-gradient(#996666, #996666); /* Light brown and light brown */
+  }
+  
+  .Fairy {
+    background: radial-gradient(#ff66cc, #ff99cc); /* Light pink and light pink */
+  }
+  
+
+  .Fire-Normal {
+    background: radial-gradient(#ff6666, #ffcc99); /* Light red and light orange */
+  }
+  
+  .Fire-Water {
+    background: radial-gradient(#ffcc99, #cce6ff); /* Light orange and light sky blue */
+  }
+  
+  .Fire-Electric {
+    background: radial-gradient(#ffcc99, #ffff66); /* Light orange and light yellow */
+  }
+  
+
+.Fire-Grass {
+    background: radial-gradient(#ffcc99, #99ff99); /* Light orange and light green */
+  }
+  
+  .Fire-Ice {
+    background: radial-gradient(#ffcc99, #ccffff); /* Light orange and light cyan */
+  }
+  
+  .Fire-Fighting {
+    background: radial-gradient(#ffcc99, #ff9966); /* Light orange and light orange */
+  }
+  
+  .Fire-Poison {
+    background: radial-gradient(#ffcc99, #ff99ff); /* Light orange and light pink */
+  }
+  
+  .Fire-Ground {
+    background: radial-gradient(#ffcc99, #ffcc66); /* Light orange and light orange */
+  }
+  
+  .Fire-Flying {
+    background: radial-gradient(#ffcc99, #ccddff); /* Light orange and light sky blue */
+  }
+  
+  .Fire-Psychic {
+    background: radial-gradient(#ffcc99, #ff99ff); /* Light orange and light pink */
+  }
+  
+  .Fire-Bug {
+    background: radial-gradient(#ffcc99, #ddff99); /* Light orange and light lime green */
+  }
+  
+  .Fire-Rock {
+    background: radial-gradient(#ffcc99, #ffcc66); /* Light orange and light orange */
+  }
+  
+  .Fire-Ghost {
+    background: radial-gradient(#ffcc99, #9966cc); /* Light orange and light blue */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Fire-Steel {
+    background: radial-gradient(#ffcc99, #cccccc); /* Light orange and light gray */
+  }
+  
+  .Fire-Dragon {
+    background: radial-gradient(#ffcc99, #9999cc); /* Light orange and light lavender */
+  }
+  
+  .Fire-Dark {
+    background: radial-gradient(#ffcc99, #996666); /* Light orange and light brown */
+  }
+  
+  .Fire-Fairy {
+    background: radial-gradient(#ffcc99, #ff99cc); /* Light orange and light pink */
+  }
+  
+  .Water-Fire {
+    background: radial-gradient(#cce6ff, #ff6666); /* Light sky blue and light red */
+  }
+  
+  .Water-Electric {
+    background: radial-gradient(#cce6ff, #ffff66); /* Light sky blue and light yellow */
+  }
+  
+  .Water-Grass {
+    background: radial-gradient(#cce6ff, #99ff99); /* Light sky blue and light green */
+  }
+  
+  .Water-Ice {
+    background: radial-gradient(#cce6ff, #ccffff); /* Light sky blue and light cyan */
+  }
+  
+  .Water-Fighting {
+    background: radial-gradient(#cce6ff, #ff9966); /* Light sky blue and light orange */
+  }
+  
+  .Water-Poison {
+    background: radial-gradient(#cce6ff, #ff99ff); /* Light sky blue and light pink */
+  }
+  
+  .Water-Ground {
+    background: radial-gradient(#cce6ff, #ffcc66); /* Light sky blue and light orange */
+  }
+  
+  .Water-Flying {
+    background: radial-gradient(#cce6ff, #ccddff); /* Light sky blue and light sky blue */
+  }
+    /* Define CSS classes for dual types with lighter radial gradients */
+  .Water-Psychic {
+    background: radial-gradient(#6699ff, #ff99ff); /* Light blue and light pink */
+  }
+  
+  .Water-Bug {
+    background: radial-gradient(#6699ff, #99cc00); /* Light blue and light green */
+  }
+  
+  .Water-Rock {
+    background: radial-gradient(#6699ff, #996600); /* Light blue and light brown */
+  }
+  .Water-Ghost {
+    background: radial-gradient(#996699, #6699cc); /* Lighter purple and lighter blue */
+  }
+  
+  
+  
+  
+  .Water-Steel {
+    background: radial-gradient(#6699ff, #999999); /* Light blue and light gray */
+  }
+  
+  .Water-Dragon {
+    background: radial-gradient(#99CCFF, #6666CC); /* Light blue and light blue */
+  }
+  
+  
+  .Water-Dark {
+    background: radial-gradient(#66ccff, #993333); /* Light blue and lighter red */
+  }
+  
+  
+  .Water-Fairy {
+    background: radial-gradient(#6699ff, #ff99ff); /* Light blue and light pink */
+  }
+  
+  .Electric-Grass {
+    background: radial-gradient(#ffff66, #99ff99); /* Light yellow and light green */
+  }
+  
+  .Electric-Ice {
+    background: radial-gradient(#ffff66, #ccffff); /* Light yellow and light cyan */
+  }
+  
+  .Electric-Fighting {
+    background: radial-gradient(#ffff66, #ff9966); /* Light yellow and light orange */
+  }
+  
+  .Electric-Poison {
+    background: radial-gradient(#ffff66, #ff99ff); /* Light yellow and light pink */
+  }
+  
+  .Electric-Ground {
+    background: radial-gradient(#ffff66, #ffcc66); /* Light yellow and light orange */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Electric-Flying {
+    background: radial-gradient(#ffff66, #cccccc); /* Light yellow and light gray */
+  }
+  
+  .Electric-Psychic {
+    background: radial-gradient(#ffff66, #ff99ff); /* Light yellow and light pink */
+  }
+  
+  .Electric-Bug {
+    background: radial-gradient(#ffff66, #99cc00); /* Light yellow and light green */
+  }
+  
+  .Electric-Rock {
+    background: radial-gradient(#ffff66, #996600); /* Light yellow and light brown */
+  }
+  
+  .Electric-Ghost {
+    background: radial-gradient(#ffff66, #330066); /* Light yellow and dark purple */
+  }
+  
+  .Electric-Steel {
+    background: radial-gradient(#ffff66, #999999); /* Light yellow and light gray */
+  }
+  
+  .Electric-Dragon {
+    background: radial-gradient(#6699ff, #ffcc00); /* Light blue and light yellow */
+  }
+  
+  .Electric-Dark {
+    background: radial-gradient(#663333, #ffcc00); /* Light brown and light yellow */
+  }
+  
+  .Electric-Fairy {
+    background: radial-gradient(#ffff66, #ff99ff); /* Light yellow and light pink */
+  }
+  
+  .Grass-Ice {
+    background: radial-gradient(#99ff99, #ccffff); /* Light green and light cyan */
+  }
+  
+  .Grass-Fighting {
+    background: radial-gradient(#99ff99, #ff9966); /* Light green and light orange */
+  }
+  
+  .Grass-Poison {
+    background: radial-gradient(#99ff99, #ff99ff); /* Light green and light pink */
+  }
+  
+  .Grass-Ground {
+    background: radial-gradient(#99ff99, #ffcc66); /* Light green and light orange */
+  }
+  
+  .Grass-Flying {
+    background: radial-gradient(#99ff99, #cccccc); /* Light green and light gray */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Grass-Psychic {
+    background: radial-gradient(#99ff99, #ff99ff); /* Light green and light pink */
+  }
+  
+  .Grass-Bug {
+    background: radial-gradient(#99ff99, #99cc00); /* Light green and light green */
+  }
+  
+  .Grass-Rock {
+    background: radial-gradient(#99ff99, #996600); /* Light green and light brown */
+  }
+  
+  .Grass-Ghost {
+    background: radial-gradient(#663366, #00FF66); /* Light purple and light green */
+  }
+  
+  .Grass-Steel {
+    background: radial-gradient(#99ff99, #999999); /* Light green and light gray */
+  }
+  
+  .Grass-Dragon {
+    background: radial-gradient(#99ff99, #3300cc); /* Light green and light blue */
+  }
+  
+  .Grass-Dark {
+    background: radial-gradient(#99ff99, #996666); /* Light green and lighter red */
+  }
+  
+  
+  
+  .Grass-Fairy {
+    background: radial-gradient(#99ff99, #ff99ff); /* Light green and light pink */
+  }
+  
+  .Ice-Fighting {
+    background: radial-gradient(#ccffff, #ff9966); /* Light cyan and light orange */
+  }
+  
+  .Ice-Poison {
+    background: radial-gradient(#ccffff, #ff99ff); /* Light cyan and light pink */
+  }
+  
+  .Ice-Ground {
+    background: radial-gradient(#ccffff, #ffcc66); /* Light cyan and light orange */
+  }
+  
+  .Ice-Flying {
+    background: radial-gradient(#ccffff, #cccccc); /* Light cyan and light gray */
+  }
+  
+  .Ice-Psychic {
+    background: radial-gradient(#ccffff, #ff99ff); /* Light cyan and light pink */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Ice-Bug {
+    background: radial-gradient(#ccffff, #99cc00); /* Light cyan and light green */
+  }
+  
+  .Ice-Rock {
+    background: radial-gradient(#ccffff, #996600); /* Light cyan and light brown */
+  }
+  
+  .Ice-Ghost {
+    background: radial-gradient(#ccffff, #330066); /* Light cyan and dark purple */
+  }
+  
+  .Ice-Steel {
+    background: radial-gradient(#ccffff, #999999); /* Light cyan and light gray */
+  }
+  
+  .Ice-Dragon {
+    background: radial-gradient(#ccffff, #3300cc); /* Light cyan and light blue */
+  }
+  
+  .Ice-Dark {
+    background: radial-gradient(#ccffff, #330000); /* Light cyan and dark red */
+  }
+  
+  .Ice-Fairy {
+    background: radial-gradient(#ccffff, #ff99ff); /* Light cyan and light pink */
+  }
+  
+  .Fighting-Poison {
+    background: radial-gradient(#ff9966, #ff99ff); /* Light orange and light pink */
+  }
+  
+  .Fighting-Ground {
+    background: radial-gradient(#ff9966, #ffcc66); /* Light orange and light orange */
+  }
+  
+  .Fighting-Flying {
+    background: radial-gradient(#ff9966, #cccccc); /* Light orange and light gray */
+  }
+  
+  .Fighting-Psychic {
+    background: radial-gradient(#ff9966, #ff00ff); /* Light orange and light pink */
+  }
+  
+  .Fighting-Bug {
+    background: radial-gradient(#ff9966, #99cc00); /* Light orange and light green */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Fighting-Rock {
+    background: radial-gradient(#ff3300, #996600); /* Light orange and light brown */
+  }
+  
+  .Fighting-Ghost {
+    background: radial-gradient(#996699, #FF6633); /* Light purple and light orange */
+  }
+  
+  
+  .Fighting-Steel {
+    background: radial-gradient(#ff3300, #999999); /* Light orange and light gray */
+  }
+  
+  .Fighting-Dragon {
+    background: radial-gradient(#FF6600, #3399FF); /* Light orange and light blue */
+  }
+  
+  
+  .Fighting-Dark {
+    background: radial-gradient(#996666, #FF3300); /* Light brown and orange-red */
+  }
+  
+  
+  .Fighting-Fairy {
+    background: radial-gradient(#ff3300, #ff99ff); /* Light orange and light pink */
+  }
+  
+  .Poison-Ground {
+    background: radial-gradient(#B276B2, #CCAACC); /* Light purple and even lighter purple */
+  }
+  
+  
+  .Poison-Flying {
+    background: radial-gradient(#990099, #cccccc); /* Light purple and light gray */
+  }
+  
+  .Poison-Psychic {
+    background: radial-gradient(#990099, #ff00ff); /* Light purple and light pink */
+  }
+  
+  .Poison-Water {
+    background: radial-gradient(#cce6ff, #ff99ff); /* Light sky blue and light pink */
+  }
+  
+  .Poison-Bug {
+    background: radial-gradient(#990099, #99cc00); /* Light purple and light green */
+  }
+  
+  .Poison-Rock {
+    background: radial-gradient(#CC99CC, #CC9966); /* Lighter purple and lighter brown */
+  }
+  
+  
+  .Poison-Ghost {
+    background: radial-gradient(#990099, #330066); /* Light purple and dark purple */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Poison-Steel {
+    background: radial-gradient(#990099, #999999); /* Light purple and light gray */
+  }
+  
+  .Poison-Dragon {
+    background: radial-gradient(#663366, #cc99cc); /* Light purple and light blue */
+  }
+  
+  
+  .Poison-Dark {
+    background: radial-gradient(#e5b3e5, #660000); /* Lighter purple and dark red */
+  }
+  
+  
+  
+  .Poison-Fairy {
+    background: radial-gradient(#990099, #ff99ff); /* Light purple and light pink */
+  }
+  .Poison-Fire {
+    background: radial-gradient(#ffcc99, #ff99ff); /* Light orange and light pink */
+  }
+  
+  .Ground-Flying {
+    background: radial-gradient(#996600, #cccccc); /* Light brown and light gray */
+  }
+  
+  .Ground-Psychic {
+    background: radial-gradient(#996600, #ff00ff); /* Light brown and light pink */
+  }
+  
+  .Ground-Bug {
+    background: radial-gradient(#996600, #99cc00); /* Light brown and light green */
+  }
+  
+  .Ground-Rock {
+    background: radial-gradient(#996600, #996600); /* Light brown and light brown */
+  }
+
+  .Ground-Steel {
+    background: radial-gradient(#996600, #999999); /* Light brown and light gray */
+  }
+  
+ 
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Ground-Dark {
+    background: radial-gradient(#996600, #330000); /* Light brown and dark red */
+  }
+  
+  .Ground-Fairy {
+    background: radial-gradient(#996600, #ff99ff); /* Light brown and light pink */
+  }
+  
+  .Flying-Psychic {
+    background: radial-gradient(#cccccc, #ff00ff); /* Light gray and light pink */
+  }
+  
+  .Flying-Bug {
+    background: radial-gradient(#cccccc, #99cc00); /* Light gray and light green */
+  }
+  
+  .Flying-Rock {
+    background: radial-gradient(#cccccc, #996600); /* Light gray and light brown */
+  }
+  
+  .Flying-Ghost {
+    background: radial-gradient(#cccccc, #330066); /* Light gray and dark purple */
+  }
+  
+  .Flying-Steel {
+    background: radial-gradient(#cccccc, #999999); /* Light gray and light gray */
+  }
+  
+  .Flying-Dragon {
+    background: radial-gradient(#336699, #99CCFF); /* Light blue and light blue-gray */
+  }
+  
+  
+  .Flying-Dark {
+    background: radial-gradient(#cccccc, #330000); /* Light gray and dark red */
+  }
+  
+  .Flying-Fairy {
+    background: radial-gradient(#cccccc, #ff99ff); /* Light gray and light pink */
+  }
+  
+  .Psychic-Bug {
+    background: radial-gradient(#ff00ff, #99cc00); /* Light pink and light green */
+  }
+  
+  .Psychic-Rock {
+    background: radial-gradient(#ff00ff, #996600); /* Light pink and light brown */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+  .Psychic-Ghost {
+    background: radial-gradient(#663366, #FF66FF); /* Light purple and light pink */
+  }
+  
+  .Psychic-Steel {
+    background: radial-gradient(#FF00FF, #999999); /* Light pink and light gray */
+  }
+  
+  .Psychic-Dragon {
+    background: radial-gradient(#FF00FF, #3300CC); /* Light pink and light blue */
+  }
+  
+  .Psychic-Red {
+    background: radial-gradient(#663366, #FF99FF); /* Light purple and light pink */
+  }
+  
+  
+  .Psychic-Fairy {
+    background: radial-gradient(#FF00FF, #FF99FF); /* Light pink and light pink */
+  }
+  
+  .Psychic-Normal {
+    background: radial-gradient(#FF00FF, white); /* Light pink and white */
+  }
+  
+  .Psychic-Grass {
+    background: radial-gradient(#FF00FF, #00FF00); /* Pink and green */
+  }
+  
+  .Psychic-Flying {
+    background: radial-gradient(#FF00FF, #CCCCCC); /* Pink and light gray */
+  }
+  
+
+  .Bug-Rock {
+    background: radial-gradient(#99CC00, #996600); /* Light green and light brown */
+  }
+  
+
+  .Bug-Steel {
+    background: radial-gradient(#99CC00, #999999); /* Light green and light gray */
+  }
+  
+  .Bug-Dragon {
+    background: radial-gradient(#99CC00, #3300CC); /* Light green and light blue */
+  }
+  
+  .Bug-Dark {
+    background: radial-gradient(#99CC00, #330000); /* Light green and dark red */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Bug-Fairy {
+    background: radial-gradient(#99CC00, #FF99FF); /* Light green and light pink */
+  }
+  
+  .Rock-Ghost {
+    background: radial-gradient(#996600, #330066); /* Light brown and dark purple */
+  }
+  
+  .Rock-Steel {
+    background: radial-gradient(#996600, #999999); /* Light brown and light gray */
+  }
+  
+
+  .Rock-Dark {
+    background: radial-gradient(#B57351, #5C6C7D); /* Lighter Brown to Light Gray */
+  }
+  
+  
+  .Rock-Fairy {
+    background: radial-gradient(#996600, #FF99FF); /* Light brown and light pink */
+  }
+  
+  .Ghost-Dark {
+    background: radial-gradient(#666666, #666699); /* Lighter gray and lighter purple */
+  }
+
+  .Ghost-Fairy {
+    background: radial-gradient(#330066, #FF99FF); /* Dark purple and light pink */
+  }
+
+
+  
+  .Dark-Steel {
+    background: radial-gradient(#663333, #cccccc); /* Light brown and light gray */
+  }
+  
+  .Steel-Fairy {
+    background: radial-gradient(#999999, #FF99FF); /* Light gray and light pink */
+  }
+  
+  .Dragon-Fairy {
+    background: radial-gradient(#3300CC, #FF99FF); /* Light blue and light pink */
+  }
+  
+  .Dark-Fairy {
+    background: radial-gradient(#330000, #FF99FF); /* Dark red and light pink */
+  }
+  
+  .Normal-Grass {
+    background: radial-gradient(white, green); /* White and green */
+  }
+  
+  .Normal-Ice {
+    background: radial-gradient(white, #00FFFF); /* White and light blue */
+  }
+  
+  .Normal-Fighting {
+    background: radial-gradient(white, #FF3300); /* White and dark orange */
+  }
+  
+  .Normal-Poison {
+    background: radial-gradient(white, #990099); /* White and dark purple */
+  }
+  
+  .Normal-Ground {
+    background: radial-gradient(white, #996600); /* White and light brown */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Normal-Flying {
+    background: radial-gradient(white, #CCCCCC); /* White and light gray */
+  }
+  
+  .Normal-Psychic {
+    background: radial-gradient(white, #FF00FF); /* White and magenta */
+  }
+  
+  .Normal-Bug {
+    background: radial-gradient(white, #99CC00); /* White and light green */
+  }
+  
+  .Normal-Rock {
+    background: radial-gradient(white, #996600); /* White and light brown */
+  }
+  
+  .Normal-Ghost {
+    background: radial-gradient(white, #330066); /* White and dark purple */
+  }
+  
+  .Normal-Steel {
+    background: radial-gradient(white, #999999); /* White and light gray */
+  }
+  
+  .Normal-Dragon {
+    background: radial-gradient(white, #3300CC); /* White and light blue */
+  }
+  
+  .Normal-Dark {
+    background: radial-gradient(white, #330000); /* White and dark red */
+  }
+  
+  .Normal-Fairy {
+    background: radial-gradient(white, #FF99FF); /* White and light pink */
+  }
+  
+  .Bug-Normal {
+    background: radial-gradient(#99CC00, white); /* Light green and white */
+  }
+  
+  .Bug-Fire {
+    background: radial-gradient(#99CC00, #FF0000); /* Light green and red */
+  }
+  
+  .Bug-Water {
+    background: radial-gradient(#99CC00, #0000FF); /* Light green and blue */
+  }
+  
+  .Bug-Electric {
+    background: radial-gradient(#99CC00, #FFFF00); /* Light green and yellow */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Bug-Grass {
+    background: radial-gradient(#99CC00, #00FF00); /* Light green and green */
+  }
+  
+  .Bug-Ice {
+    background: radial-gradient(#99CC00, #00FFFF); /* Light green and light blue */
+  }
+  
+  .Bug-Fighting {
+    background: radial-gradient(#99CC00, #FF3300); /* Light green and red-orange */
+  }
+  
+  .Bug-Poison {
+    background: radial-gradient(#CC99CC, #FFCCFF); /* Light purple and even lighter purple */
+  }
+  
+  
+  .Bug-Ground {
+    background: radial-gradient(#99CC00, #996600); /* Light green and light brown */
+  }
+  
+  .Bug-Flying {
+    background: radial-gradient(#99CC00, #CCCCCC); /* Light green and light gray */
+  }
+  
+  .Bug-Psychic {
+    background: radial-gradient(#99CC00, #FF00FF); /* Light green and magenta */
+  }
+  
+  .Bug-Rock {
+    background: radial-gradient(#99CC00, #996600); /* Light green and light brown */
+  }
+  
+  .Bug-Ghost {
+    background: radial-gradient(#99CC00, #7733A5); /* Light green and lighter purple */
+  }
+  
+  
+  .Bug-Steel {
+    background: radial-gradient(#99CC00, #999999); /* Light green and light gray */
+  }
+  
+  .Bug-Dragon {
+    background: radial-gradient(#99CC00, #3300CC); /* Light green and light blue */
+  }
+  
+  .Bug-Dark {
+    background: radial-gradient(#99CC00, #330000); /* Light green and dark red */
+  }
+  
+  .Bug-Fairy {
+    background: radial-gradient(#99CC00, #FF99FF); /* Light green and light pink */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Rock-Normal {
+    background: radial-gradient(#996600, white); /* Light brown and white */
+  }
+  
+  .Rock-Fire {
+    background: radial-gradient(#996600, #FF0000); /* Light brown and red */
+  }
+  
+  .Rock-Water {
+    background: radial-gradient(#996600, #6699FF); /* Light brown and light blue */
+  }
+  
+  
+  .Rock-Electric {
+    background: radial-gradient(#996600, #FFFF00); /* Light brown and yellow */
+  }
+  
+  .Rock-Grass {
+    background: radial-gradient(#996600, #00FF00); /* Light brown and green */
+  }
+  
+  .Rock-Ice {
+    background: radial-gradient(#996600, #00FFFF); /* Light brown and light blue */
+  }
+  
+  .Rock-Fighting {
+    background: radial-gradient(#996600, #FF3300); /* Light brown and red-orange */
+  }
+  .Rock-Poison {
+    background: radial-gradient(#CC99CC, #CC9966); /* Lighter purple and lighter brown */
+  }
+  
+  
+  .Rock-Ground {
+    background: radial-gradient(#996600, #996600); /* Light brown and light brown */
+  }
+  
+  .Rock-Flying {
+    background: radial-gradient(#996600, #CCCCCC); /* Light brown and light gray */
+  }
+  
+  .Rock-Psychic {
+    background: radial-gradient(#996600, #FF00FF); /* Light brown and magenta */
+  }
+  
+  .Rock-Bug {
+    background: radial-gradient(#996600, #99CC00); /* Light brown and light green */
+  }
+  
+  .Rock-Ghost {
+    background: radial-gradient(#996600, #330066); /* Light brown and dark purple */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Rock-Steel {
+    background: radial-gradient(#996600, #999999); /* Light brown and gray */
+  }
+  
+  .Rock-Dragon {
+    background: radial-gradient(#cc9933, #6699ff); /* Light brown and light blue */
+  }
+  
+  
+  .Rock-Fairy {
+    background: radial-gradient(#996600, #FF99FF); /* Light brown and pink */
+  }
+  
+  .Dragon-Normal {
+    background: radial-gradient(#3300CC, white); /* Dark blue and white */
+  }
+  
+  .Dragon-Fire {
+    background: radial-gradient(#ffcc99, #9999cc); /* Light orange and light lavender */
+  }
+  
+  .Dragon-Water {
+    background: radial-gradient(#3300CC, #0000FF); /* Dark blue and blue */
+  }
+  
+  .Dragon-Electric {
+    background: radial-gradient(#6699ff, #ffcc00); /* Light blue and light yellow */
+  }
+  
+  
+  .Dragon-Grass {
+    background: radial-gradient(#3300CC, #00FF00); /* Dark blue and green */
+  }
+  
+  .Dragon-Ice {
+    background: radial-gradient(#3300CC, #00FFFF); /* Dark blue and light blue */
+  }
+  
+  .Dragon-Fighting {
+    background: radial-gradient(#FF6600, #3399FF); /* Light orange and light blue */
+  }
+  
+  
+  .Dragon-Poison {
+    background: radial-gradient(#663366, #cc99cc); /* Light purple and light blue */
+  }
+  
+  
+  .Dragon-Ground {
+    background: radial-gradient(#cc9900, #3366cc); /* Lighter brown and light blue */
+  }
+  
+  .Dragon-Flying {
+    background: radial-gradient(#336699, #99CCFF); /* Light blue and light blue-gray */
+  }
+  
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Dragon-Psychic {
+    background: radial-gradient(#3300CC, #FF00FF); /* Dark blue and pink */
+  }
+  
+  .Dragon-Bug {
+    background: radial-gradient(#3300CC, #99CC00); /* Dark blue and lime green */
+  }
+  
+  .Dragon-Rock {
+    background: radial-gradient(#cc9933, #6699ff); /* Light brown and light blue */
+  }
+  
+  .Ghost-Dragon {
+    background: radial-gradient(#9966CC, #996699); /* Even lighter blue and lighter purple */
+  }
+  
+  
+  .Dragon-Steel {
+    background: radial-gradient(#6699cc, #996699); /* Light blue and light gray */
+  }
+  
+  .Dragon-Dark {
+    background: radial-gradient(#9999CC, #996666); /* Light blue and light brown */
+  }
+  
+  
+  
+  .Dragon-Fairy {
+    background: radial-gradient(#3300CC, #FF99FF); /* Dark blue and pink */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+  .Ghost-Normal {
+    background: radial-gradient(#330066, white); /* Dark purple and white */
+  }
+  
+  .Ghost-Fire {
+    background: radial-gradient(#ffcc99, #9966cc); /* Light orange and light blue */
+  }
+  
+  .Ghost-Electric {
+    background: radial-gradient(#330066, #FFFF00); /* Dark purple and yellow */
+  }
+  
+
+  .Ghost-Ice {
+    background: radial-gradient(#330066, #00FFFF); /* Dark purple and light blue */
+  }
+  
+  .Ghost-Poison {
+    background: radial-gradient(#9966CC, #CC99FF); /* Light purple and even lighter purple */
+  }
+  
+  
+
+.Ghost-Ground {
+  background: radial-gradient(#330066, #996600); /* Dark purple and light brown */
+}
+
+.Ghost-Flying {
+  background: radial-gradient(#330066, #CCCCCC); /* Dark purple and light gray */
+}
+
+
+
+.Ghost-Bug {
+  background: radial-gradient(#330066, #99CC00); /* Dark purple and lime green */
+}
+
+.Ghost-Rock {
+  background: radial-gradient(#330066, #996600); /* Dark purple and light brown */
+}
+
+
+
+.Ghost-Fairy {
+  background: radial-gradient(#330066, #FF99FF); /* Dark purple and pink */
+}
+/* Define CSS classes for dual types with lighter radial gradients */
+.Ground-Normal {
+  background: radial-gradient(#996600, white); /* Light brown and white */
+}
+
+.Ground-Fire {
+  background: radial-gradient(#996600, #FF0000); /* Light brown and red */
+}
+
+.Ground-Water {
+  background: radial-gradient(#996600, #0000FF); /* Light brown and blue */
+}
+
+.Ground-Electric {
+  background: radial-gradient(#996600, #FFFF00); /* Light brown and yellow */
+}
+
+.Ground-Grass {
+  background: radial-gradient(#996600, #00FF00); /* Light brown and green */
+}
+
+.Ground-Ice {
+  background: radial-gradient(#996600, #00FFFF); /* Light brown and light blue */
+}
+
+/* Define CSS classes for dual types with lighter radial gradients */
+.Ground-Fighting {
+    background: radial-gradient(#996600, #FF3300); /* Light brown and orange-red */
+  }
+  
+  .Ground-Poison {
+    background: radial-gradient(#996600, #990099); /* Light brown and purple */
+  }
+  
+  .Ground-Flying {
+    background: radial-gradient(#996600, #CCCCCC); /* Light brown and light gray */
+  }
+  
+  .Ground-Psychic {
+    background: radial-gradient(#996600, #FF00FF); /* Light brown and pink */
+  }
+  
+  .Ground-Bug {
+    background: radial-gradient(#996600, #99CC00); /* Light brown and lime green */
+  }
+  
+
+  .Ground-Ghost {
+    background: radial-gradient(#996699, #996666); /* Light purple and light brown */
+  }
+  
+  .Ground-Steel {
+    background: radial-gradient(#996600, #999999); /* Light brown and gray */
+  }
+  
+  .Ground-Dragon {
+    background: radial-gradient(#cc9900, #3366cc); /* Lighter brown and light blue */
+  }
+  
+  
+  .Ground-Dark {
+    background: radial-gradient(#996600, #330000); /* Light brown and dark gray */
+  }
+  
+  .Ground-Fairy {
+    background: radial-gradient(#996600, #FF99FF); /* Light brown and pink */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+  .Dark-Normal {
+    background: radial-gradient(#330000, white); /* Dark gray and white */
+  }
+  
+  .Dark-Fire {
+    background: radial-gradient(#706B6B, #FF6666); /* Light gray and light red */
+  }
+  
+  
+  .Dark-Water {
+    background: radial-gradient(#330000, #0000FF); /* Dark gray and blue */
+  }
+  
+  .Dark-Electric {
+    background: radial-gradient(#663333, #ffcc00); /* Light brown and light yellow */
+  }
+  
+  .Dark-Grass {
+    background: radial-gradient(#330000, #00FF00); /* Dark gray and green */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Dark-Ice {
+    background: radial-gradient(#330000, #00FFFF); /* Dark gray and cyan */
+  }
+  
+  .Dark-Fighting {
+    background: radial-gradient(#996666, #FF3300); /* Light brown and orange-red */
+  }
+  
+  
+  .Dark-Flying {
+    background: radial-gradient(#330000, #CCCCCC); /* Dark gray and light gray */
+  }
+  
+  .Dark-Poison {
+    background: radial-gradient(#330000, #990099); /* Dark gray and purple */
+  }
+  
+  .Dark-Ground {
+    background: radial-gradient(#330000, #996600); /* Dark gray and light brown */
+  }
+  
+  .Dark-Flying {
+    background: radial-gradient(#330000, #CCCCCC); /* Dark gray and light gray */
+  }
+  
+  .Dark-Psychic {
+    background: radial-gradient(#663366, #FF99FF); /* Light purple and light pink */
+  }
+  
+  
+  .Dark-Bug {
+    background: radial-gradient(#330000, #99CC00); /* Dark gray and lime green */
+  }
+  
+  .Dark-Rock {
+    background: radial-gradient(#330000, #996600); /* Dark gray and light brown */
+  }
+  
+  .Dark-Ghost {
+    background: radial-gradient(#666666, #666699); /* Lighter gray and lighter purple */
+  }
+  
+  
+  .Dark-Steel {
+    background: radial-gradient(#663333, #cccccc); /* Light brown and light gray */
+  }
+  
+  
+  .Dark-Dragon {
+    background: radial-gradient(#9999CC, #996666); /* Light blue and light brown */
+  }
+  
+  
+  .Dark-Fairy {
+    background: radial-gradient(#330000, #FF99FF); /* Dark gray and pink */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+  .Steel-Normal {
+    background: radial-gradient(#999999, white); /* Gray and white */
+  }
+  
+  .Steel-Fire {
+    background: radial-gradient(#999999, #FF0000); /* Gray and red */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Steel-Water {
+    background: radial-gradient(#999999, #0000FF); /* Gray and blue */
+  }
+  
+  .Steel-Electric {
+    background: radial-gradient(#999999, #FFFF00); /* Gray and yellow */
+  }
+  
+  .Steel-Grass {
+    background: radial-gradient(#999999, #00FF00); /* Gray and green */
+  }
+  
+  .Steel-Ice {
+    background: radial-gradient(#999999, #00FFFF); /* Gray and cyan */
+  }
+  
+  .Steel-Fighting {
+    background: radial-gradient(#999999, #FF3300); /* Gray and orange-red */
+  }
+  
+  .Steel-Poison {
+    background: radial-gradient(#999999, #990099); /* Gray and purple */
+  }
+  
+  .Steel-Ground {
+    background: radial-gradient(#999999, #996600); /* Gray and light brown */
+  }
+  
+  .Steel-Flying {
+    background: radial-gradient(#999999, #CCCCCC); /* Gray and light gray */
+  }
+  
+  .Steel-Psychic {
+    background: radial-gradient(#999999, #FF00FF); /* Gray and pink */
+  }
+  
+  .Steel-Bug {
+    background: radial-gradient(#999999, #99CC00); /* Gray and lime green */
+  }
+  
+  .Steel-Rock {
+    background: radial-gradient(#999999, #996600); /* Gray and light brown */
+  }
+  
+  .Steel-Ghost {
+    background: radial-gradient(#996699, #999999); /* Light purple and gray */
+  }
+  
+  .Steel-Dragon {
+    background: radial-gradient(#6699cc, #996699); /* Light blue and light gray */
+  }
+  
+
+  .Steel-Fairy {
+    background: radial-gradient(#999999, #FF99FF); /* Gray and pink */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+  .Electric-Normal {
+    background: radial-gradient(#FFFF00, white); /* Yellow and white */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+.Electric-Fire {
+    background: radial-gradient(#FFFF00, #FF0000); /* Yellow and red */
+  }
+  
+  .Electric-Water {
+    background: radial-gradient(#FFFF00, #0000FF); /* Yellow and blue */
+  }
+  
+  .Electric-Grass {
+    background: radial-gradient(#FFFF00, #00FF00); /* Yellow and green */
+  }
+  
+  .Electric-Ice {
+    background: radial-gradient(#FFFF00, #00FFFF); /* Yellow and cyan */
+  }
+  
+  .Electric-Fighting {
+    background: radial-gradient(#FFFF00, #FF3300); /* Yellow and orange-red */
+  }
+  
+  .Electric-Poison {
+    background: radial-gradient(#FFFF00, #990099); /* Yellow and purple */
+  }
+  
+  .Electric-Ground {
+    background: radial-gradient(#FFFF00, #996600); /* Yellow and light brown */
+  }
+  
+  .Electric-Flying {
+    background: radial-gradient(#FFFF00, #CCCCCC); /* Yellow and light gray */
+  }
+  
+  .Electric-Psychic {
+    background: radial-gradient(#FFFF00, #FF00FF); /* Yellow and pink */
+  }
+  
+  .Electric-Bug {
+    background: radial-gradient(#FFFF00, #99CC00); /* Yellow and lime green */
+  }
+  
+  .Electric-Rock {
+    background: radial-gradient(#FFFF00, #996600); /* Yellow and light brown */
+  }
+  
+  .Electric-Ghost {
+    background: radial-gradient(#FFFF00, #330066); /* Yellow and dark purple */
+  }
+  
+  .Electric-Steel {
+    background: radial-gradient(#FFFF00, #999999); /* Yellow and gray */
+  }
+  
+
+  
+  .Electric-Fairy {
+    background: radial-gradient(#FFFF00, #FF99FF); /* Yellow and pink */
+  }
+  
+  /* Define CSS classes for dual types with lighter radial gradients */
+  .Ghost-Normal {
+    background: radial-gradient(#330066, white); /* Dark purple and white */
+  }
+
+  /* Define CSS classes for dual types with lighter radial gradients */
+
+  .Ghost-Water {
+    background: radial-gradient(#996699, #6699cc); /* Lighter purple and lighter blue */
+  }
+  
+  
+  
+  .Ghost-Electric {
+    background: radial-gradient(#330066, #FFFF00); /* Dark purple and yellow */
+  }
+  
+  .Ghost-Grass {
+    background: radial-gradient(#663366, #00FF66); /* Light purple and light green */
+  }
+  
+  
+  .Ghost-Ice {
+    background: radial-gradient(#330066, #00FFFF); /* Dark purple and cyan */
+  }
+  
+  .Ghost-Fighting {
+    background: radial-gradient(#996699, #FF6633); /* Light purple and light orange */
+  }
+  
+  
+  .Ghost-Ground {
+    background: radial-gradient(#996699, #996666); /* Light purple and light brown */
+  }
+  
+  
+  .Ghost-Flying {
+    background: radial-gradient(#330066, #CCCCCC); /* Dark purple and light gray */
+  }
+  
+  .Ghost-Psychic {
+    background: radial-gradient(#663366, #FF66FF); /* Light purple and light pink */
+  }
+  
+  
+  .Ghost-Bug {
+    background: radial-gradient(#330066, #99CC00); /* Dark purple and lime green */
+  }
+  
+  .Ghost-Rock {
+    background: radial-gradient(#330066, #996600); /* Dark purple and light brown */
+  }
+  
+  .Ghost-Steel {
+    background: radial-gradient(#996699, #999999); /* Light purple and gray */
+  }
+  
+  
+  .Dragon-Ghost {
+    background: radial-gradient(#9966CC, #996699); /* Even lighter blue and lighter purple */
+  }
+  
+  .Fairy-Steel {
+    background: radial-gradient(#ff99ff, #cccccc); /* Light pink and light gray */
+  }
+  
+  
+  .Ghost-Fairy {
+    background: radial-gradient(#330066, #FF99FF); /* Dark purple and pink */
+  }
+  
