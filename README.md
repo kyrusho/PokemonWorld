@@ -32,3 +32,4 @@ npm install react-router-dom
 npm install axios
 
 # Have fun on the Pokemon World!
+![image](https://github.com/user-attachments/assets/a6a688fe-16b5-4138-8816-20a8247f6f21)
